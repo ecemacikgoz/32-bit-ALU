@@ -9,7 +9,7 @@ entity alu_32bits is
     r    : out std_logic_vector(31 downto 0);
     z    : out std_logic
   );
-end alu;
+end alu_32bits;
 
 architecture behavioral of alu_32bits is
 begin
