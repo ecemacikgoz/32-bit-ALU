@@ -3,10 +3,10 @@ use ieee.std_logic_1164.all;
 
 entity addsub32 is
   port (
-    a   : in  std_logic_vector(31 downto 0);
-    b   : in  std_logic_vector(31 downto 0);
-    sub : in  std_logic;
-    s   : out std_logic_vector(31 downto 0)
+    a   : in  std_logic_vector(31 downto 0) := (others => '0');
+    b   : in  std_logic_vector(31 downto 0) := (others => '0');
+    sub : in  std_logic := '0';
+    s   : out std_logic_vector(31 downto 0) := (others => '0')
   );
 end addsub32;
 
