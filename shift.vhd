@@ -34,7 +34,12 @@ begin
   end process;
   
        
-       
+       if (dir='0') then -- Rotate right if dir='0'
+         reg <= reg(0) & reg(width-1 downto 1);
+       else
+         reg <= reg(width-2 downto 0) & reg(width-1);
+       end if;
+  
 variable shft : integer;
             variable out_right_arithmetic : std_logic_vector(31 downto 0);
             variable out_right_logical    : std_logic_vector(31 downto 0);
