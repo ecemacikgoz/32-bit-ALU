@@ -11,6 +11,14 @@ entity addsub32 is
 end addsub32;
 
 architecture behavioral of addsub32 is
+signal sTemp  : std_logic_vector (31 downto 0) := (others => '0');
 begin
-  
+  s <= sTemp;
+  addSub : process(a, b, sub)
+  begin
+    case sub is
+      when "0" => sTemp <= a + b;
+      when others => sTemp <= a - b;
+    end case;
+  end process addSub;
 end behavioral;
