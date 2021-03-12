@@ -11,7 +11,7 @@ entity mux_4 is
   end mux_4;
 architecture rtl of mux_4 is
 begin
-p_mux : process(a1,a2,a3,a4,sel)
+p_mux : process(subs1, subs2, subs3, subs4, selAluc)
 begin
   case selAluc is
     when "00" => r <= subs1 ;
