@@ -25,7 +25,7 @@ component addsub32 is
  );
 end component;
 ---------------------------------------------------------------------  
-------------------------- and32 komponent --------------------------
+------------------------- and32 komponent ---------------------------
 component and32 is 
  Port ( 
     a   : in  std_logic_vector (31 downto 0) := (others => '0');
@@ -34,7 +34,7 @@ component and32 is
  );
 end component;
 ---------------------------------------------------------------------    
-------------------------- or32 komponent ---------------------------
+------------------------- or32 komponent ----------------------------
 component or32 is 
  Port ( 
     a   : in  std_logic_vector (31 downto 0) := (others => '0');
@@ -43,7 +43,7 @@ component or32 is
  );
 end component;
 ---------------------------------------------------------------------   
-------------------------- xor32 komponent --------------------------
+------------------------- xor32 komponent ---------------------------
 component xor32 is 
  Port ( 
     a   : in  std_logic_vector (31 downto 0) := (others => '0');
@@ -52,7 +52,7 @@ component xor32 is
  );
 end component;
 ---------------------------------------------------------------------   
-------------------------- lui32 komponent --------------------------
+------------------------- lui32 komponent ---------------------------
 component xor32 is 
  Port ( 
     a   : in  std_logic_vector (31 downto 0) := (others => '0');
@@ -61,17 +61,17 @@ component xor32 is
  );
 end component;
 ---------------------------------------------------------------------   
-------------------------- mux2 komponent ---------------------------
+------------------------- mux2 komponent ----------------------------
 component mux2 is 
  Port ( 
     subs1      : in  std_logic_vector(31 downto 0) := (others => '0');
     subs2      : in  std_logic_vector(31 downto 0) := (others => '0');
     selAluc    : in  std_logic := '0';
-    mux2Out    : out std_logic_vector(31 downto 0) := (others => '0');
+    mux2Out    : out std_logic_vector(31 downto 0) := (others => '0')
  );
 end component;
 ---------------------------------------------------------------------
-------------------------- mux4 komponent ---------------------------
+------------------------- mux4 komponent ----------------------------
 component mux4 is 
  Port ( 
     subs1      : in  std_logic_vector(31 downto 0) := (others => '0');
@@ -79,7 +79,7 @@ component mux4 is
     subs3      : in  std_logic_vector(31 downto 0) := (others => '0');
     subs4      : in  std_logic_vector(31 downto 0) := (others => '0');
     selAluc    : in  std_logic := '00';
-    mux4Out    : out std_logic_vector(31 downto 0) := (others => '0');
+    mux4Out    : out std_logic_vector(31 downto 0) := (others => '0')
  );
 end component;
 ---------------------------------------------------------------------  
